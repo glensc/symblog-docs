@@ -496,12 +496,12 @@ The View
 Now we have built the ``show`` action for the ``Blog`` controller we can focus
 on displaying the ``Blog`` entity. As specified in the ``show`` action the
 template ``BloggerBlogBundle:Blog:show.html.twig`` will be rendered. Let's create
-this template located at ``src/Blogger/BlogBundle/Resouces/views/Blog/show.html.twig``
+this template located at ``src/Blogger/BlogBundle/Resources/views/Blog/show.html.twig``
 and paste in the following.
 
 .. code-block:: html
 
-    {# src/Blogger/BlogBundle/Resouces/views/Blog/show.html.twig #}
+    {# src/Blogger/BlogBundle/Resources/views/Blog/show.html.twig #}
     {% extends 'BloggerBlogBundle::layout.html.twig' %}
 
     {% block title %}{{ blog.title }}{% endblock %}
@@ -531,7 +531,7 @@ CSS
 ...
 
 In order to ensure the blog show page looks beautiful, we need to add some styling.
-Update the stylesheet located at ``src/Blogger/BlogBundle/Resouces/public/css/blog.css``
+Update the stylesheet located at ``src/Blogger/BlogBundle/Resources/public/css/blog.css``
 with the following.
 
 .. code-block:: css
