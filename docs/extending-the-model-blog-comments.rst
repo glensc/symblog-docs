@@ -484,6 +484,8 @@ Finally we need to update the database to reflect the changes to our entities. W
 could use the ``doctrine:schema:update`` task as follows to do this, but instead
 we will introduce Doctrine 2 Migrations.
 
+NOTE: Do not run this command now, or next step will not have any migrations to do:
+
 .. code-block:: bash
 
     $ php app/console doctrine:schema:update --force
@@ -522,7 +524,7 @@ Now let's register the bundle in the kernel located at ``app/AppKernel.php``.
     {
         $bundles = array(
             // ...
-            new Symfony\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle(),
+            new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             // ...
         );
         // ...
