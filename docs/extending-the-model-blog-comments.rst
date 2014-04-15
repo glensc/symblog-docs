@@ -404,7 +404,7 @@ paste in the following.
         }
 
         /**
-         * @ORM\preUpdate
+         * @ORM\PreUpdate
          */
         public function setUpdatedValue()
         {
