@@ -207,7 +207,7 @@ Update the ``Blog`` entity metadata located in the file at
     /**
      * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Entity\Repository\BlogRepository")
      * @ORM\Table(name="blog")
-     * @ORM\HasLifecycleCallbacks()
+     * @ORM\HasLifecycleCallbacks
      */
     class Blog
     {
