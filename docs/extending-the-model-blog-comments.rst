@@ -1250,7 +1250,7 @@ with the following.
             {# .. #}
 
             <h3>Add Comment</h3>
-            {% render 'BloggerBlogBundle:Comment:new' with { 'blog_id': blog.id } %}
+            {{ render(controller( 'BloggerBlogBundle:Comment:new', { 'blog_id': blog.id } )) }}
         </section>
     {% endblock %}
 
