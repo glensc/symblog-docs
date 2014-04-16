@@ -837,7 +837,7 @@ instead of setting the values directly in the query like so
 
 .. code-block:: php
 
-    ->where('c.blog = ' . blogId)
+    ->where('c.blog = ' . $blogId)
 
 In this example the value of ``$blogId`` will not be sanitized and could leave the
 query open to an `SQL injection <http://en.wikipedia.org/wiki/SQL_injection>`_ attack.
