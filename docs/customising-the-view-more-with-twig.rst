@@ -313,7 +313,7 @@ the ``sidebar`` action of the ``Page`` controller.
     {# .. #}
 
     {% block sidebar %}
-        {% render "BloggerBlogBundle:Page:sidebar" %}
+        {{ render(controller( "BloggerBlogBundle:Page:sidebar")) }}
     {% endblock %}
 
 Finally let's add the CSS for the tag cloud. Add a new stylesheet located at
